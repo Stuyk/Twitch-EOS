@@ -1,0 +1,144 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sun Dec  2 16:08:14 2018",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "burntokens",
+            "base": "",
+            "fields": [
+                {
+                    "name": "userchannel",
+                    "type": "name"
+                },
+                {
+                    "name": "username",
+                    "type": "string"
+                },
+                {
+                    "name": "amount",
+                    "type": "int64"
+                }
+            ]
+        },
+        {
+            "name": "channels",
+            "base": "",
+            "fields": [
+                {
+                    "name": "channelname",
+                    "type": "uint64"
+                },
+                {
+                    "name": "users",
+                    "type": "userdata[]"
+                }
+            ]
+        },
+        {
+            "name": "increment",
+            "base": "",
+            "fields": [
+                {
+                    "name": "userchannel",
+                    "type": "name"
+                },
+                {
+                    "name": "username",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "spendtokens",
+            "base": "",
+            "fields": [
+                {
+                    "name": "userchannel",
+                    "type": "name"
+                },
+                {
+                    "name": "username",
+                    "type": "string"
+                },
+                {
+                    "name": "amount",
+                    "type": "int64"
+                },
+                {
+                    "name": "itemname",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "userdata",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "string"
+                },
+                {
+                    "name": "messagecount",
+                    "type": "uint64"
+                },
+                {
+                    "name": "tokens",
+                    "type": "uint64"
+                },
+                {
+                    "name": "items",
+                    "type": "useritem[]"
+                }
+            ]
+        },
+        {
+            "name": "useritem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "value",
+                    "type": "int64"
+                },
+                {
+                    "name": "creator",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "burntokens",
+            "type": "burntokens",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "increment",
+            "type": "increment",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "spendtokens",
+            "type": "spendtokens",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "channels",
+            "type": "channels",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
